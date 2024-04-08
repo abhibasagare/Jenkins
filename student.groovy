@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Pull') {
             steps {
-                git "https://github.com/abhibasagare/Jenkis"
+                git branch: 'main', credentialsId: 'second', url: 'https://github.com/abhibasagare/Jenkins'
                 echo "pulling done from remote repository"
             }
         }
