@@ -9,13 +9,13 @@ pipeline {
             }
         }
 
-        stage('Build') {
-            steps {
-                cd "/opt/apache-maven-3.9.6/bin/" 
-                sh "mvn clean package"
-                echo 'Here we doing build operation'
-            }
-        }
+        // stage('Build') {
+        //     steps {
+        //         cd "/opt/apache-maven-3.9.6/bin/" 
+        //         sh "mvn clean package"
+        //         echo 'Here we doing build operation'
+        //     }
+        // }
         // stage('Test') {
         //     steps {
         //         echo 'This is test operation'
