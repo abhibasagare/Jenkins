@@ -2,16 +2,17 @@ pipeline {
     agent any
 
     stages {
-        // stage('Pull') {
-        //     steps {
-        //         git 'https://github.com/abhibasagare/Jenkis/'
-        //         echo "pulling done from remote repository"
-        //     }
-        // }
+        stage('Pull') {
+            steps {
+                git "https://github.com/abhibasagare/Jenkis"
+                echo "pulling done from remote repository"
+            }
+        }
 
         stage('Build') {
             steps {
-                sh '/opt/apache-maven-3.9.6/bin/mvn clean package'
+                cd "/opt/apache-maven-3.9.6/bin/" 
+                sh "mvn clean package"
                 echo 'Here we doing build operation'
             }
         }
