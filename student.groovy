@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Pull') {
             steps {
-                git https://github.com/abhibasagare/Jenkis/student.groovy
+                git 'https://github.com/abhibasagare/Jenkis/student.groovy'
                 echo "pulling done from remote repository"
             }
         }
