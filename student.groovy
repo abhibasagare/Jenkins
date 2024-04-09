@@ -11,7 +11,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh '/home/ubuntu/student-app/ mvn clean package'
+                sh '/home/ubuntu/student-app/mvn clean package'
                 echo 'Here we doing build operation'
             }
         }
