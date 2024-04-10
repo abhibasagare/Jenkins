@@ -1,6 +1,9 @@
 pipeline {
     agent any
-
+    environment 
+    { 
+        NAME = /opt/apache-maven-3.9.6/my-app/
+            }
     stages {
         stage('Pull') {
             steps {
@@ -11,7 +14,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh '/opt/apache-maven-3.9.6/my-app/ mvn clean package'
+                sh 'mvn clean package'
                 echo 'Here we doing build operation'
             }
         }
