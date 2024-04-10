@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment 
     { 
-        NAME = "/opt/apache-maven-3.9.6/my-app/"
+        NAME = "/opt/apache-maven-3.9.6/bin/"
             }
     stages {
         stage('Pull') {
