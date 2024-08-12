@@ -14,12 +14,12 @@ pipeline {
                 echo 'Here we doing build operation'
             }
         }
-        stage('Test') {
-            steps {
-                sh '''/opt/apache-maven-3.9.6/bin/mvn sonar:sonar   -Dsonar.projectKey=studentapp_ui   -Dsonar.host.url=http://3.108.66.31:9000   -Dsonar.login=d28be382dbb7818776a331660feddb3a40a84e29'''
-                echo 'This is test operation'
-            }
-        }
+        // stage('Test') {
+        //     steps {
+        //         sh '''/opt/apache-maven-3.9.6/bin/mvn sonar:sonar   -Dsonar.projectKey=studentapp_ui   -Dsonar.host.url=http://3.108.66.31:9000   -Dsonar.login=d28be382dbb7818776a331660feddb3a40a84e29'''
+        //         echo 'This is test operation'
+        //     }
+        // }
 
         // stage('Quality check') {
         //     steps {
